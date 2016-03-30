@@ -16,6 +16,7 @@ if &compatible
 endif
 
 set encoding=utf-8
+set number
 set relativenumber
 set autoindent
 set incsearch
