@@ -12,7 +12,7 @@
 "- Defaults --------------------------------------------------------------------
 "-------------------------------------------------------------------------------
 if &compatible
-	set nocompatible 
+    set nocompatible 
 endif
 
 set encoding=utf-8
@@ -20,6 +20,9 @@ set relativenumber
 set autoindent
 set incsearch
 set hlsearch
+set tabstop=4
+set shiftwidth=4
+set expandtab
 set smarttab
 set wildmenu
 set autoread
@@ -27,6 +30,8 @@ set laststatus=2
 set history=1000
 set scrolloff=5
 set backspace=indent,eol,start
+
+au FileType html setl tabstop=2 shiftwidth=2
 
 let mapleader = ","
 filetype plugin indent on
@@ -45,6 +50,7 @@ Plug 'bling/vim-bufferline' " buffers in statusbar
 Plug 'tpope/vim-fugitive' " git in statusbar
 Plug 'airblade/vim-gitgutter' " show git diff
 Plug 'Shougo/unite.vim' " search plugin
+Plug 'sheerun/vim-polyglot' " language pack
 call plug#end()
 
 
@@ -67,7 +73,7 @@ let g:airline_theme='badwolf'
 
 " unicode symbols
 if !exists('g:airline_symbols')
-	let g:airline_symbols = {}
+    let g:airline_symbols = {}
 endif
 
 let g:airline_left_sep = '»'
