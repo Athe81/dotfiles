@@ -52,6 +52,7 @@ Plug 'tpope/vim-fugitive' " git in statusbar
 Plug 'airblade/vim-gitgutter' " show git diff
 Plug 'Shougo/unite.vim' " search plugin
 Plug 'sheerun/vim-polyglot' " language pack
+Plug 'scrooloose/nerdcommenter'
 call plug#end()
 
 
