@@ -31,6 +31,7 @@ set laststatus=2
 set history=1000
 set scrolloff=5
 set backspace=indent,eol,start
+set omnifunc=syntaxcomplete#longest,menu
 
 au FileType html setl tabstop=2 shiftwidth=2
 
