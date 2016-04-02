@@ -38,6 +38,10 @@ let mapleader = ","
 filetype plugin indent on
 syntax enable
 
+nmap <leader>tn :tabnew<CR>
+
+" close buffer without window
+nmap <leader>bc :confirm bprevious<CR>:confirm :bdelete #<CR>
 
 "-------------------------------------------------------------------------------
 "- vim-plug (plugin manager) ---------------------------------------------------
