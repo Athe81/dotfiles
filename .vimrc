@@ -31,7 +31,8 @@ set laststatus=2
 set history=1000
 set scrolloff=5
 set backspace=indent,eol,start
-set omnifunc=syntaxcomplete#longest,menu
+set omnifunc=syntaxcomplete#Complete
+set completeopt=longest,menuone
 
 au FileType html setl tabstop=2 shiftwidth=2
 
@@ -58,6 +59,7 @@ Plug 'airblade/vim-gitgutter' " show git diff
 Plug 'Shougo/unite.vim' " search plugin
 Plug 'sheerun/vim-polyglot' " language pack
 Plug 'scrooloose/nerdcommenter'
+Plug 'ajh17/vimcompletesme' " tab complete
 call plug#end()
 
 
